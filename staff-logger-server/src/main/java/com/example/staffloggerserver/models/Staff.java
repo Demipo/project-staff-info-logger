@@ -13,24 +13,23 @@ import javax.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "tb_emp")
-public class Employee {
+@Table(name = "staff_table")
+public class Staff {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column
 	private Integer id;
 
-	@Column
+	@Column(nullable = false)
 	private String name;
 
-	@Column
+	@Column(nullable = false)
 	private String department;
 
-	@Column
+	@Column(nullable = false)
 	private Date dob;
 
-	@Column
+	@Column(nullable = false)
 	private String gender;
 
 }
